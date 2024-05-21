@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gpt4all-rag-app"
+version = "0.1.0"
+description = "A private and locally run RAG application using GPT4All models and Gradio"
+authors = ["Eric Liao"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = "^0.29.0"
+gradio = "^4.31.4"
+gpt4all = "^2.6.0"
+faiss-cpu = "^1.8.0"
+langchain = "^0.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
